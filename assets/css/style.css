@@ -1,0 +1,46 @@
+/* Minimal dark theme */
+:root{--bg:#0b0f14;--panel:#121820;--muted:#8aa0b6;--text:#e6eef6;--accent:#5dd4ff;--danger:#ff6b6b;--ok:#4dd4a8;--border:#1d2733}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text)}
+a{color:var(--accent);text-decoration:none}
+
+/* Layout */
+.layout{display:flex;min-height:100vh}
+.sidebar{width:240px;background:var(--panel);border-right:1px solid var(--border);padding:16px;position:sticky;top:0;height:100vh}
+.brand{font-weight:700;letter-spacing:.5px;margin:0 0 16px 0}
+.nav a{display:block;padding:10px 12px;border-radius:8px;color:var(--text)}
+.nav a.active,.nav a:hover{background:#0f141b;border:1px solid var(--border)}
+.main{flex:1;padding:20px}
+
+/* Cards, tables, controls */
+.card{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:16px}
+.card-title{margin:0 0 12px 0}
+.grid{display:grid;gap:16px}
+.grid.cols-2{grid-template-columns:1fr 1fr}
+.btn{background:var(--accent);color:#00111a;border:0;border-radius:10px;padding:10px 14px;font-weight:600;cursor:pointer}
+.btn.secondary{background:#0f141b;color:var(--text);border:1px solid var(--border)}
+.btn.danger{background:var(--danger);color:#2b0707}
+.btn:disabled{opacity:.6;cursor:not-allowed}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}
+.field input,.field select,.field textarea{background:#0f141b;border:1px solid var(--border);color:var(--text);padding:10px;border-radius:10px}
+.muted{color:var(--muted);font-size:12px}
+.table{width:100%;border-collapse:collapse}
+.table th,.table td{padding:10px;border-bottom:1px solid var(--border);text-align:left}
+.badge{display:inline-block;padding:2px 8px;border-radius:999px;border:1px solid var(--border);color:var(--muted)}
+.row-actions{display:flex;gap:8px}
+.alert{padding:10px;border-radius:10px;margin-bottom:12px}
+.alert-error{background:#251216;border:1px solid #3a1a22;color:#ff9aa9}
+
+/* Auth page */
+.auth-container{min-height:100vh;display:grid;place-items:center;padding:20px}
+
+/* Header */
+.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.spacer{flex:1}
+
+@media (max-width: 900px){
+	.grid.cols-2{grid-template-columns:1fr}
+	.sidebar{position:relative;height:auto;width:100%;border-right:0;border-bottom:1px solid var(--border)}
+	.layout{flex-direction:column}
+}

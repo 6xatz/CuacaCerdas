@@ -1,0 +1,12 @@
+[
+    {
+        "time": 1762262684,
+        "city": "Jakarta",
+        "temperature": 28.2,
+        "humidity": 75,
+        "wind": 5.4,
+        "action": "Jalan santai teduh",
+        "confidence": 0.31666666666666665,
+        "user": "admin"
+    }
+]
