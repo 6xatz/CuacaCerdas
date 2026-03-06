@@ -7,8 +7,9 @@
 - Menampilkan prakiraan **suhu**, **kecepatan angin**, dan **kelembapan**
 - UI modern, responsif, dan mobile-friendly berbasis **Tailwind CSS**
 - Dukungan **dark mode / light mode**
-- Integrasi **API cuaca** (misal OpenWeatherMap atau Open Meteo)
+- Integrasi **API cuaca** (Open Meteo)
 - Komponen interaktif seperti **pencarian lokasi** dan filter kegiatan
+*terdapat STATIC LOGIN features / tuntutan tugas, dan tidak akan diimplementasikan lebih lanjut.*
 
 ## Documentation
 
